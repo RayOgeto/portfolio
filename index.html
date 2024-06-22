@@ -1,0 +1,106 @@
+<!-- frame -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's world</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="styleshhet" href="style.css">
+ </head>
+ <body>
+    <nav>
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <span>ray</span>
+                </div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <div class="user">
+                <img src="#">
+                <div class="#">
+                    <p class="bold"> Ray</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <i class='bx bxs-home'></i>
+                            <span class="nav-item">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class='bx bx-info-square' ></i>
+                            <span class="nav-item">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <i class='bx bx-briefcase' ></i>
+                            <span class="nav-item">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class='bx bx-envelope' ></i>
+                            <span class="nav-item">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <main>
+        <!-- home  -->
+        <section id="home">
+            <h1>Welcome to Ray's world!</h1>
+            <p>This is my personal website.</br> are you ready to explore?</p>
+            <a href="#">explore</a>
+            
+         </section>
+        <!-- about me  -->
+         <section id="about">
+            <h2>About me</h2>
+            <p>Hi, I'm Ray. I'm a web developer and a passionate learner. eager in creating some beatiful things on the web</p>
+    
+         </section>
+        <!-- some of my great works -->
+         <section id="projects">
+            <h2>some of my great works</h2>
+            <div class="wrapper">
+                <div class="1">project 1</div>
+                <div class="2">project 2</div>
+                <div class="3">project 3</div>
+                <div class="3">project 4</div>
+                <div class="3">project 5</div>
+                <div class="3">project 6</div>
+    
+            </div>
+         </section>
+        <!-- contact me     -->
+         <section id="contact">
+            <h2>lets talk</h2>
+            <p>Want to chat about a project or just say hi? I'd love to hear from you!</p>
+            <a href="#">linkedin</a>
+            <a href="#">instagram</a>
+            <a href="#">gmail</a>
+            
+         </section>
+    </main>
+    
+     
+ </body>
+ <script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+ </script>
+ </html>
