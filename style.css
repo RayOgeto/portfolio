@@ -6,8 +6,16 @@
 
 }
 
+body {
+    display: flex;
+}
+
+section {
+    min-height: 100vh;
+}
+
 .sidebar {
-    position:absolute;
+    position:sticky;
     top:0;
     left:0;
     height: 100vh;
@@ -121,5 +129,25 @@
 
 .sidebar.active .nav-item {
     opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+.sidebar.activeul li .tooltip {
+    display: none;
 }
 
