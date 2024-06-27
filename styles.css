@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.jina {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigator a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigator a:hover,
+.navigator a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 20px;
+    color: #333;
+}
+
+#text a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+#text a:hover {
+    background: #359381;
+    font-size: 24px;
+}
+
+.big {
+    font-size: 28px;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    min-height: 100vh;
+}
+
+.sec h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

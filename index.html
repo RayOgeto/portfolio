@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ray's world</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- <link rel="stylesheet" href="parallax.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="styles.css">
  </head>
  <body>
-    <nav>
+    <!-- <div class="scene">
+            <img src="imgs/hill1.png" id="hill1">
+            <img src="imgs/hill2.png" id="hill2">
+            <img src="imgs/hill3.png" id="hill3">
+            <img src="imgs/hill4.png" id="hill4">
+            <img src="imgs/hill5.png" id="hill5">
+    </div> -->
+    <!-- <nav>
         <div class="sidebar">
             <div class="top">
                 <div class="logo">
@@ -18,8 +28,8 @@
                 <i class="bx bx-menu" id="btn"></i>
             </div>
             <div class="user">
-                <!-- <img src="#"> -->
-                <div class="#">
+                <img src="#"> -->
+                <!-- <div class="#">
                     <p class="bold"> Ray</p>
                     <p>Navigation Pane</p>
                 </div>
@@ -54,23 +64,44 @@
             </div>
         </div>
         
-    </nav>
+    </nav> -->
+    <header class="header">
+        <h2 class="jina">Ray</h2>
+        <div class="navigator">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact me</a>
+        </div>
+    </header>
+    
     <main>
         <!-- home  -->
-        <section id="home">
-            <h1>Welcome to Ray's world!</h1>
-            <p>This is my personal website.</br> are you ready to explore?</p>
-            <a href="#">explore</a>
+        <section id="home" class="parallax">
+            
+            
+            <img src="imgs/hill1.png" id="hill1">
+            <img src="imgs/hill2.png" id="hill2">
+            <img src="imgs/hill3.png" id="hill3">
+            <img src="imgs/hill4.png" id="hill4">
+            <img src="imgs/hill5.png" id="hill5">
+            <img src="imgs/tree.png" id="tree">
+            <p id="text"><b class="big" style="font-size: 3em;color: #fff;">Welcome to Ray's world!</b>
+                <br> <b style="font-size: 1.5em;color: #fff;">This is my personal website.</br> are you ready to explore?</b><br><br>
+                <a href="#about">Explore</a>
+            </p>
+            <img src="imgs/leaf.png" id="leaf">
+            <img src="imgs/plant.png" id="plant">
             
          </section>
         <!-- about me  -->
-         <section id="about">
+         <section id="about" class="sec">
             <h2>About me</h2>
             <p>Hi, I'm Ray. I'm a web developer and a passionate learner. eager in creating some beatiful things on the web</p>
     
          </section>
         <!-- some of my great works -->
-         <section id="projects">
+         <section id="projects" class="sec">
             <h2>some of my great works</h2>
             <div class="wrapper">
                 <div class="1">project 1</div>
@@ -83,7 +114,7 @@
             </div>
          </section>
         <!-- contact me     -->
-         <section id="contact">
+         <section id="contact" class="sec">
             <h2>lets talk</h2>
             <p>Want to chat about a project or just say hi? I'd love to hear from you!</p>
             <a href="#">linkedin</a>
@@ -95,6 +126,7 @@
     
      
  </body>
+ <script src="script.js"> </script>
  <script>
     let btn = document.querySelector('#btn')
     let sidebar = document.querySelector('.sidebar')

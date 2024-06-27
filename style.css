@@ -7,11 +7,22 @@
 }
 
 body {
+    position: relative;
     display: flex;
+    
 }
 
 section {
     min-height: 100vh;
+}
+
+main {
+    position: relative;
+    top:0;
+    left: 0;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
 }
 
 .sidebar {
@@ -151,3 +162,16 @@ section {
     display: none;
 }
 
+/* styling the header */
+
+/* .header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+} */
