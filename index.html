@@ -1,138 +1,85 @@
-<!-- frame -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ray's world</title>
+    <title>Ray's World</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- <link rel="stylesheet" href="parallax.css">
-    <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="styles.css">
- </head>
- <body>
-    <!-- <div class="scene">
-            <img src="imgs/hill1.png" id="hill1">
-            <img src="imgs/hill2.png" id="hill2">
-            <img src="imgs/hill3.png" id="hill3">
-            <img src="imgs/hill4.png" id="hill4">
-            <img src="imgs/hill5.png" id="hill5">
-    </div> -->
-    <!-- <nav>
-        <div class="sidebar">
-            <div class="top">
-                <div class="logo">
-                    <span>Looking For Something?</span>
-                </div>
+    <link rel="stylesheet" href="wan.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo"><a href="#">Ray</a></div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+            <div class="toggle">
                 <i class="bx bx-menu" id="btn"></i>
             </div>
-            <div class="user">
-                <img src="#"> -->
-                <!-- <div class="#">
-                    <p class="bold"> Ray</p>
-                    <p>Navigation Pane</p>
-                </div>
-            </div>
-            <div class="navlinks">
-                <ul>
-                    <li>
-                        <a href="#home">
-                            <i class='bx bxs-home'></i>
-                            <span class="nav-item">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            <i class='bx bx-info-square' ></i>
-                            <span class="nav-item">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects">
-                            <i class='bx bx-briefcase' ></i>
-                            <span class="nav-item">Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <i class='bx bx-envelope' ></i>
-                            <span class="nav-item">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
-        
-    </nav> -->
-    <header class="header">
-        <h2 class="jina">Ray</h2>
-        <div class="navigator">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact me</a>
+        <div class="dropdown">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Let's Talk</a></li>
         </div>
     </header>
-    
     <main>
-        <!-- home  -->
-        <section id="home" class="parallax">
-            
-            
-            <img src="imgs/hill1.png" id="hill1">
-            <img src="imgs/hill2.png" id="hill2">
-            <img src="imgs/hill3.png" id="hill3">
-            <img src="imgs/hill4.png" id="hill4">
-            <img src="imgs/hill5.png" id="hill5">
-            <img src="imgs/tree.png" id="tree">
-            <p id="text"><b class="big" style="font-size: 3em;color: #fff;">Welcome to Ray's world!</b>
-                <br> <b style="font-size: 1.5em;color: #fff;">This is my personal website.</br> are you ready to explore?</b><br><br>
+        <section id="home">
+            <p id="text">
+                <b class="big" style="font-size: 3em; color: #fff;">Welcome to Ray's world!</b>
+                <br>
+                <b style="font-size: 1.5em; color: #fff;">This is my personal website.</br> Are you ready to explore?</b>
+                <br><br>
                 <a href="#about">Explore</a>
             </p>
-            <img src="imgs/leaf.png" id="leaf">
-            <img src="imgs/plant.png" id="plant">
-            
-         </section>
-        <!-- about me  -->
-         <section id="about" class="sec">
-            <h2>About me</h2>
-            <p>Hi, I'm Ray. I'm a web developer and a passionate learner. eager in creating some beatiful things on the web</p>
-    
-         </section>
-        <!-- some of my great works -->
-         <section id="projects" class="sec">
-            <h2>some of my great works</h2>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ray. I'm a web developer and a passionate learner, eager to create some beautiful things on the web.</p>
+        </section>
+        <section id="projects">
+            <h2>Some of My Great Works</h2>
             <div class="wrapper">
-                <div class="1">project 1</div>
-                <div class="2">project 2</div>
-                <div class="3">project 3</div>
-                <div class="3">project 4</div>
-                <div class="3">project 5</div>
-                <div class="3">project 6</div>
-    
+                <div class="project">Project 1</div>
+                <div class="project">Project 2</div>
+                <div class="project">Project 3</div>
+                <div class="project">Project 4</div>
+                <div class="project">Project 5</div>
+                <div class="project">Project 6</div>
             </div>
-         </section>
-        <!-- contact me     -->
-         <section id="contact" class="sec">
-            <h2>lets talk</h2>
+        </section>
+        <section id="contact">
+            <h2>Let's Talk</h2>
             <p>Want to chat about a project or just say hi? I'd love to hear from you!</p>
-            <a href="#">linkedin</a>
-            <a href="#">instagram</a>
-            <a href="#">gmail</a>
-            
-         </section>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Gmail</a>
+        </section>
     </main>
-    
-     
- </body>
- <script src="script.js"> </script>
- <script>
-    let btn = document.querySelector('#btn')
-    let sidebar = document.querySelector('.sidebar')
+    <!-- <script>
+        const dropdown = document.querySelector('.dropdown');
+        const menubtn = document.querySelector('.toggle');
+        const menuicon = document.querySelector('.toggle i');
 
-    btn.onclick = function () {
-        sidebar.classList.toggle('active');
-    }
- </script>
- </html>
+        menubtn.onclick = function() {
+            dropdown.classList.toggle('open');
+            const isOpen = dropdown.classList.contains('open');
+            menuicon.classList = isOpen ? 'bx bx-x' : 'bx bx-menu';
+        };
+
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        };
+    </script> -->
+    <!-- <script src="navbar.js"></script> -->
+</body>
+</html>

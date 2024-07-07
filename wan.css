@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #20232a;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar .links a {
+    font-size: 1em;
+}
+
+.navbar .toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: #20232a;
+    position: absolute;
+    top: 3.5em;
+    right: 1em;
+    border-radius: 0.5em;
+}
+
+.dropdown a {
+    padding: 1em;
+    border-bottom: 1px solid #61dafb;
+}
+
+/* Main Section Styles */
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    min-height: 100vh; /* Ensuring each section has a minimum height of 100vh */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #61dafb, #282c34);
+    text-align: center;
+}
+
+#home p {
+    margin: 0;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #20232a;
+    color: #61dafb;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+}
+
+#projects .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+#projects .project {
+    background-color: #20232a;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+#contact a {
+    display: inline-block;
+    margin: 0.5em 1em 0.5em 0;
+    padding: 0.5em 1em;
+    background-color: #20232a;
+    color: #61dafb;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle {
+        display: block;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .navbar .toggle i.bx-x {
+        position: absolute;
+        right: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding: 1em;
+        text-align: center;
+    }
+
+    #home .big {
+        font-size: 2em;
+    }
+
+    #home b {
+        font-size: 1em;
+    }
+
+    #home a {
+        font-size: 1em;
+    }
+
+    #projects .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
