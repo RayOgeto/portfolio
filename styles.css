@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -53,14 +54,24 @@ header {
     border-radius: 20px;
     margin-top: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #20232a;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
     z-index: 1000;
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .navbar .links {
