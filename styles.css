@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #002D62;
+    background-color: #20232a;
     color: #333;
 }
 
@@ -83,6 +83,8 @@ header {
 .toggle {
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 20px;
+    z-index: 1000;
     display: none;
 }
 /* dropdown */
@@ -95,7 +97,7 @@ header {
     height: 0;
     width: 300px;
     color: #ffffff;
-    background: rgba(255,255,255,0.1);
+    background: #20232a;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;

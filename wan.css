@@ -62,7 +62,7 @@ section {
 }
 
 #projects .wrapper {
-    display: grid;
+    
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 1em;
 }
