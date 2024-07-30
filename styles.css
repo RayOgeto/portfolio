@@ -67,11 +67,12 @@ header {
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+    transition: .3s ease;
 }
 
 .logo a:hover {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .navbar .links {

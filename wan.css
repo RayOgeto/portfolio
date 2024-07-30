@@ -70,6 +70,8 @@ section {
 #projects .project {
     background-color: #20232a;
     padding: 1em;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 0.5em;
     text-align: center;
 }
